@@ -1,0 +1,71 @@
+/* AutoCompleteChips.css */
+.auto-complete-chips-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .search-bar-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #fafbfc;
+    outline: none;
+    flex-grow: 1;
+  }
+  
+  .users-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 5px;
+  }
+  
+  .users-list.visible {
+    display: block;
+  }
+  
+  .users-list div {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .users-list .highlighted {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .chip {
+    background-color: #35a2eb7e;
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .chip span {
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
